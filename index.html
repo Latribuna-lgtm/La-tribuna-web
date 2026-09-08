@@ -1,135 +1,258 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>La Tribuna | El periódico de los deportistas</title>
-  <meta name="description" content="La Tribuna — noticias, opinión, Champions y fútbol internacional.">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La Tribuna | El periódico de los deportistas</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:#f4f0e6;
+  color:#111;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.topline{
+  background:#15365d;
+  color:white;
+  text-align:center;
+  padding:14px 10px;
+  font-weight:bold;
+  letter-spacing:3px;
+  font-size:14px;
+}
+
+.masthead{
+  text-align:center;
+  padding:35px 15px 28px;
+  border-bottom:7px solid #111;
+}
+
+.weather{
+  font-weight:bold;
+  letter-spacing:3px;
+  font-size:14px;
+  margin-bottom:28px;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:76px;
+  line-height:.78;
+  font-weight:900;
+  margin:0;
+}
+
+.tagline{
+  font-weight:bold;
+  letter-spacing:7px;
+  margin-top:25px;
+  font-size:15px;
+}
+
+.edition{
+  margin-top:28px;
+  font-weight:bold;
+  letter-spacing:3px;
+  font-size:14px;
+}
+
+.nav{
+  display:flex;
+  gap:28px;
+  overflow-x:auto;
+  white-space:nowrap;
+  padding:18px 20px;
+  background:#f4f0e6;
+  border-bottom:1px solid #aaa;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.nav a{
+  color:#111;
+  text-decoration:none;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:30px 22px;
+}
+
+.label{
+  display:inline-block;
+  background:#15365d;
+  color:white;
+  padding:10px 18px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+h2{
+  font-family:Georgia,serif;
+  font-size:38px;
+  line-height:1.05;
+  margin:18px 0;
+}
+
+.line{
+  border-top:3px solid #111;
+  margin:20px 0 28px;
+}
+
+.hero{
+  width:100%;
+  display:block;
+  margin:20px 0;
+}
+
+.article{
+  border-top:2px solid #111;
+  padding:22px 0;
+}
+
+.article h3{
+  font-family:Georgia,serif;
+  font-size:28px;
+  margin:5px 0 10px;
+}
+
+.article p{
+  font-size:17px;
+  line-height:1.6;
+}
+
+.two{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.footer{
+  margin-top:40px;
+  background:#15365d;
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+}
+
+@media(max-width:600px){
+  .logo{font-size:58px}
+  h2{font-size:30px}
+  .two{grid-template-columns:1fr}
+}
+</style>
 </head>
+
 <body>
-  <div class="topline">EDICIÓN ESPECIAL · CHAMPIONS LEAGUE 2026/27</div>
 
-  <header class="masthead">
-    <div class="weather">MIÉRCOLES · MADRID</div>
-    <div>
-      <h1>LA TRIBUNA</h1>
-      <p>EL PERIÓDICO DE LOS DEPORTISTAS</p>
-    </div>
-    <div class="edition">MÁS QUE FÚTBOL</div>
-  </header>
+<div class="topline">
+EDICIÓN ESPECIAL · CHAMPIONS LEAGUE 2026/27
+</div>
 
-  <nav class="nav">
-    <button class="menu" aria-label="Abrir menú">☰</button>
-    <a href="#portada">PORTADA</a>
-    <a href="#ultima-hora">ÚLTIMA HORA</a>
-    <a href="#real-madrid">REAL MADRID</a>
-    <a href="#champions">CHAMPIONS</a>
-    <a href="#internacional">INTERNACIONAL</a>
-    <a href="#opinion">OPINIÓN</a>
-    <a href="#exclusivas">EXCLUSIVAS</a>
-  </nav>
+<header class="masthead">
+  <div class="weather">MIÉRCOLES · MADRID</div>
 
-  <main id="portada">
-    <section class="breaking" id="ultima-hora">
-      <span>ÚLTIMA HORA</span>
-      <p>El Real Madrid arranca la Champions con victoria: 2-1 ante el Inter en el Bernabéu.</p>
-    </section>
+  <h1 class="logo">LA<br>TRIBUNA</h1>
 
-    <section class="hero-grid">
-      <article class="hero">
-        <img src="portada-champions.png" alt="Edición especial de La Tribuna sobre el Real Madrid en Champions">
-        <div class="category">CHAMPIONS · JORNADA 1</div>
-        <h2>UN TRIUNFO QUE SABE A TAREA PENDIENTE</h2>
-        <p class="lead">El Real Madrid vence 2-1 al Inter, pero deja más dudas que certezas en su debut europeo.</p>
-        <p class="byline">Por <strong>Meryem Brown</strong> · Escritora de La Tribuna</p>
-        <button class="read" onclick="openArticle()">LEER ARTÍCULO →</button>
-      </article>
+  <div class="tagline">
+    EL PERIÓDICO DE LOS DEPORTISTAS
+  </div>
 
-      <aside class="side-news">
-        <article>
-          <span class="tag">REAL MADRID</span>
-          <h3>Mbappé abre el camino en el Bernabéu</h3>
-          <p>El francés puso el 1-0 al minuto 14.</p>
-        </article>
-        <article>
-          <span class="tag">REAL MADRID</span>
-          <h3>Valverde amplía la ventaja</h3>
-          <p>El uruguayo apareció al 23' para el 2-0.</p>
-        </article>
-        <article>
-          <span class="tag">ANÁLISIS</span>
-          <h3>Bellingham, una noche para el olvido</h3>
-          <p>Una actuación gris y una clara ocasión desperdiciada.</p>
-        </article>
-      </aside>
-    </section>
+  <div class="edition">
+    MÁS QUE FÚTBOL
+  </div>
+</header>
 
-    <section class="score" id="champions">
-      <div><small>CHAMPIONS LEAGUE · 2026/27 · JORNADA 1</small></div>
-      <div class="scoreline"><strong>REAL MADRID</strong><b>2 — 1</b><strong>INTER DE MILÁN</strong></div>
-      <div class="scorers">K. Mbappé 14' · F. Valverde 23' &nbsp; | &nbsp; L. Martínez 67'</div>
-    </section>
+<nav class="nav">
+  <a href="#portada">☰</a>
+  <a href="#portada">PORTADA</a>
+  <a href="#ultima">ÚLTIMA HORA</a>
+  <a href="#madrid">REAL MADRID</a>
+  <a href="#opinion">OPINIÓN</a>
+</nav>
 
-    <section class="columns">
-      <div>
-        <h2 class="section-title" id="real-madrid">REAL MADRID</h2>
-        <div class="cards">
-          <article class="card">
-            <span class="tag">EL BERNABÉU</span>
-            <h3>Tres puntos, pero mucho por corregir</h3>
-            <p>La victoria aparece en el marcador; el juego todavía busca su mejor versión.</p>
-          </article>
-          <article class="card">
-            <span class="tag">CHAMPIONS</span>
-            <h3>El camino europeo apenas comienza</h3>
-            <p>El Madrid inicia su aventura con una noche de contrastes.</p>
-          </article>
-        </div>
-      </div>
+<main class="container">
 
-      <aside class="opinion" id="opinion">
-        <h2 class="section-title">OPINIÓN</h2>
-        <blockquote>“Se ganó, sí. Pero este Madrid necesita más fútbol, más conexión y menos individualidades.”</blockquote>
-        <cite>— Meryem Brown</cite>
-      </aside>
-    </section>
+<section id="portada">
 
-    <section class="strip" id="internacional">
-      <div>
-        <span class="tag">FÚTBOL INTERNACIONAL</span>
-        <h2>La Champions ya encendió sus primeros titulares.</h2>
-      </div>
-      <div class="mini-result">2 — 1</div>
-    </section>
+  <span class="label">ÚLTIMA HORA</span>
 
-    <section id="exclusivas" class="exclusive">
-      <div>
-        <span class="tag">EN EXCLUSIVA</span>
-        <h2>El Madrileño × La Tribuna</h2>
-        <p>Una edición especial, una firma invitada y una mirada distinta desde el Bernabéu.</p>
-      </div>
-      <div class="signature">Meryem<br><span>Brown</span></div>
-    </section>
-  </main>
+  <h2>
+    El Real Madrid arranca la Champions con victoria: 2-1 ante el Inter en el Bernabéu.
+  </h2>
 
-  <footer>
-    <strong>LA TRIBUNA</strong>
-    <span>EL PERIÓDICO DE LOS DEPORTISTAS</span>
-    <span>© 2026 · Todos los derechos reservados</span>
-  </footer>
+  <div class="line"></div>
 
-  <dialog id="article">
-    <button class="close" onclick="closeArticle()">×</button>
-    <span class="tag">CHAMPIONS · COLUMNA</span>
-    <h2>Un triunfo que sabe a tarea pendiente</h2>
-    <p class="byline">Por <strong>Meryem Brown</strong></p>
-    <p>El Real Madrid comenzó su camino en la Champions League 2026/27 con una victoria 2-1 ante el Inter de Milán en el Santiago Bernabéu, en un partido donde el resultado fue mejor que el fútbol.</p>
-    <p>Mbappé abrió el marcador al 14' y Valverde amplió la ventaja al 23'. El Inter reaccionó con el tanto de Lautaro Martínez al 67', haciendo que el tramo final tuviera más tensión de la necesaria.</p>
-    <p>El triunfo suma tres puntos, pero deja una conclusión clara: hay mucho margen para mejorar. Bellingham tampoco tuvo su mejor noche y desperdició una ocasión muy clara de gol por intentar resolverla “por sobrado”, cuando lo más sencillo era definir.</p>
-    <p><strong>Se ganó. Ahora toca jugar mejor.</strong></p>
-  </dialog>
+  <img
+    src="portada-champions.png"
+    alt="Portada especial de La Tribuna"
+    class="hero"
+  >
 
-  <script src="script.js"></script>
+</section>
+
+<section id="madrid" class="article">
+
+  <h3>Real Madrid</h3>
+
+  <p>
+    El conjunto blanco comienza una nueva aventura europea
+    con la mirada puesta en otra noche histórica en el Bernabéu.
+  </p>
+
+</section>
+
+<section id="ultima" class="article">
+
+  <h3>Última hora</h3>
+
+  <p>
+    La Champions ya está en marcha y Madrid vuelve a ponerse
+    en modo europeo. Todas las noticias, protagonistas y rumores
+    estarán aquí.
+  </p>
+
+</section>
+
+<div class="two">
+
+<section id="opinion" class="article">
+
+  <h3>Opinión</h3>
+
+  <p>
+    Un triunfo que sabe a tarea pendiente. El resultado está,
+    pero la temporada apenas comienza.
+  </p>
+
+</section>
+
+<section class="article">
+
+  <h3>Más que fútbol</h3>
+
+  <p>
+    Historias, personajes, vestuario y todo aquello que ocurre
+    alrededor del terreno de juego.
+  </p>
+
+</section>
+
+</div>
+
+</main>
+
+<footer class="footer">
+  <strong>LA TRIBUNA</strong><br><br>
+  EL PERIÓDICO DE LOS DEPORTISTAS<br>
+  MÁS QUE FÚTBOL
+</footer>
+
 </body>
 </html>
