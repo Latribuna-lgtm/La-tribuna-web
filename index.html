@@ -3,186 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>La Tribuna | El periódico de los deportistas</title>
+<meta name="description" content="La Tribuna — más que fútbol. Real Madrid, Champions, opinión, exclusivas y actualidad deportiva.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="date">MARTES<br><b>8 DE SEPTIEMBRE DE 2026</b><br><span>Madrid, España</span></div>
+  <div class="brand"><h1>LA TRIBUNA</h1><p>EL PERIÓDICO DE LOS DEPORTISTAS</p><small>MÁS QUE FÚTBOL</small></div>
+  <div class="champions">⚽<br><b>CHAMPIONS LEAGUE</b><br>2026/27</div>
+</header>
 
-<style>
-*{
-  box-sizing:border-box;
-}
+<nav>
+  <a href="#portada">PORTADA</a>
+  <a href="#ultima">ÚLTIMA HORA</a>
+  <a href="#madrid">REAL MADRID</a>
+  <a href="#champions">CHAMPIONS</a>
+  <a href="#exclusivas">EXCLUSIVAS</a>
+  <a href="#opinion">OPINIÓN</a>
+  <a href="#gossip">GOSSIP</a>
+</nav>
 
-html{
-  scroll-behavior:smooth;
-}
+<main>
+<section id="portada" class="hero">
+  <img src="01-portada.png" alt="Portada de La Tribuna: Real Madrid ante Inter">
+  <div class="hero-copy">
+    <span>CHAMPIONS LEAGUE 2026/27</span>
+    <h2>EL MADRID GANA, PERO SUFRE MÁS DE LA CUENTA</h2>
+    <p>El Real Madrid abre su camino europeo con una victoria ante el Inter en una noche de tensión en el Bernabéu.</p>
+    <a class="button" href="#madrid">LEER LA COBERTURA</a>
+  </div>
+</section>
 
-body{
-  margin:0;
-  background:#eeeae2;
-  color:#111;
-  font-family:Georgia,"Times New Roman",serif;
-}
+<section id="ultima" class="section">
+  <div class="section-title"><span>ÚLTIMA HORA</span><h2>Lo que acaba de pasar</h2></div>
+  <div class="cards">
+    <article class="card"><img src="02-mbappe.png"><h3>Mbappé, un inicio de alto nivel</h3><p>Gol, liderazgo y protagonismo en una noche europea exigente.</p></article>
+    <article class="card"><img src="03-valverde.png"><h3>Valverde, el motor del equipo</h3><p>Entrega, despliegue y carácter cuando el partido más lo necesitaba.</p></article>
+    <article class="card"><img src="04-bernabeu.png"><h3>El Bernabéu vuelve a latir</h3><p>La Champions regresó a Madrid y el estadio volvió a ser protagonista.</p></article>
+  </div>
+</section>
 
-header{
-  background:#f7f5ef;
-  border-bottom:3px solid #071b2c;
-}
+<section id="madrid" class="section dark">
+  <div class="section-title"><span>REAL MADRID</span><h2>La noche blanca, bajo la lupa</h2></div>
+  <div class="feature-grid">
+    <article><img src="06-jude.png"><h3>Jude, una noche para el olvido</h3><p>Un análisis directo de una actuación básica, con una clara ocasión desperdiciada y poca influencia en el juego.</p></article>
+    <article><img src="07-jude-analisis.png"><h3>El Madrid gana, pero quedan preguntas</h3><p>Tres puntos importantes no esconden todo lo que el equipo deberá corregir.</p></article>
+    <article><img src="03-valverde.png"><h3>Valverde sostiene al equipo</h3><p>Cuando el partido se complicó, apareció el uruguayo para aportar equilibrio.</p></article>
+  </div>
+</section>
 
-.masthead{
-  display:grid;
-  grid-template-columns:180px 1fr 180px;
-  align-items:center;
-  padding:18px 25px 12px;
-  gap:20px;
-}
+<section id="champions" class="section">
+  <div class="section-title"><span>CHAMPIONS</span><h2>La jornada europea</h2></div>
+  <article class="wide">
+    <img src="08-champions-resultados.png" alt="Resultados de la jornada de Champions">
+    <div><h3>Champions: primera noche, primeros ganadores</h3><p>Todos los resultados de la jornada del martes 8 de septiembre de 2026, reunidos en una sola edición especial.</p></div>
+  </article>
+</section>
 
-.date{
-  font-size:14px;
-  line-height:1.35;
-  border-right:1px solid #999;
-  padding-right:15px;
-}
+<section id="exclusivas" class="section meryem">
+  <div class="section-title"><span>EXCLUSIVAS</span><h2>La firma de Meryem Brown</h2></div>
+  <article class="meryem-card">
+    <img src="05-meryem.png" alt="Meryem Brown en cobertura de Champions">
+    <div>
+      <div class="tag">COLUMNA ESPECIAL</div>
+      <h3>MERyEM, PRESENCIA QUE INCOMODA</h3>
+      <p class="lead">Mientras las miradas se multiplican fuera del campo, dentro del terreno hubo actuaciones que no estuvieron a la altura de la noche.</p>
+      <p>Una mirada profesional, elegante y arrolladora sobre el partido: sin necesidad de exagerar, los detalles hablan. Bellingham tuvo una noche gris, sin peso suficiente para marcar diferencias y con una ocasión clara que terminó desperdiciada.</p>
+      <blockquote>“Hay noches en las que el talento no alcanza. También se necesita presencia.”</blockquote>
+      <p><b>— Meryem Brown, La Tribuna</b></p>
+    </div>
+  </article>
+</section>
 
-.brand{
-  text-align:center;
-}
+<section id="opinion" class="section opinion">
+  <div class="section-title"><span>OPINIÓN</span><h2>Lo que dejó el partido</h2></div>
+  <div class="opinion-box">
+    <h3>GANAR NO BORRA TODO LO QUE FALLÓ</h3>
+    <p>El resultado importa, pero también importa cómo se llegó a él. La Tribuna analiza las señales positivas y las dudas que deja el estreno europeo.</p>
+  </div>
+</section>
 
-.brand h1{
-  margin:0;
-  font-size:clamp(45px,8vw,105px);
-  line-height:.85;
-  letter-spacing:-4px;
-}
+<section id="gossip" class="section dark">
+  <div class="section-title"><span>GOSSIP</span><h2>Fuera del campo</h2></div>
+  <div class="gossip-grid">
+    <article><img src="05-meryem.png"><h3>Meryem vuelve a robar miradas</h3><p>La presencia de la periodista en el Bernabéu no pasó desapercibida.</p></article>
+    <article><img src="04-bernabeu.png"><h3>Una noche para recordar</h3><p>Champions, focos y mucho movimiento alrededor del estadio.</p></article>
+  </div>
+</section>
+</main>
 
-.brand p{
-  margin:12px 0 0;
-  font-size:14px;
-  letter-spacing:6px;
-}
-
-.champions{
-  text-align:center;
-  font-size:15px;
-  line-height:1.4;
-}
-
-nav{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  background:#f7f5ef;
-  border-top:1px solid #999;
-  border-bottom:1px solid #999;
-}
-
-nav a{
-  color:#111;
-  text-decoration:none;
-  padding:12px 22px;
-  font-weight:bold;
-  font-size:14px;
-  letter-spacing:1px;
-}
-
-nav a:hover{
-  background:#071b2c;
-  color:white;
-}
-
-.breaking{
-  background:#071b2c;
-  color:white;
-  padding:10px 20px;
-  font-weight:bold;
-  letter-spacing:3px;
-  text-align:center;
-}
-
-.container{
-  width:min(1450px,94%);
-  margin:25px auto 50px;
-}
-
-.intro{
-  text-align:center;
-  margin-bottom:25px;
-}
-
-.intro h2{
-  font-size:clamp(28px,5vw,58px);
-  margin:0 0 8px;
-  text-transform:uppercase;
-}
-
-.intro p{
-  margin:0;
-  font-size:18px;
-}
-
-.news-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:24px;
-}
-
-.article{
-  background:#f8f6f0;
-  border:1px solid #bbb;
-  box-shadow:0 4px 12px rgba(0,0,0,.12);
-  overflow:hidden;
-}
-
-.article.featured{
-  grid-column:1/-1;
-}
-
-.image-wrap{
-  width:100%;
-  background:#111;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;
-}
-
-/* IMPORTANTE:
-   La imagen conserva TODA su proporción.
-   No usamos object-fit:cover.
-*/
-.article img{
-  display:block;
-  width:100%;
-  height:auto;
-  max-width:100%;
-}
-
-.article-content{
-  padding:20px 24px 25px;
-}
-
-.category{
-  color:#5d6570;
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:2px;
-  margin-bottom:8px;
-}
-
-.article h3{
-  margin:0 0 10px;
-  font-size:clamp(22px,3vw,38px);
-  line-height:1;
-  text-transform:uppercase;
-}
-
-.article p{
-  font-size:17px;
-  line-height:1.5;
-  margin:0;
-}
-
-.meryem{
-  border-top:6px solid #071b2c;
-}
-
-.jude{
-  border-top:6px solid #8b171
+<footer>LA TRIBUNA · MADRID 2026/27 · PORQUE EL FÚTBOL TAMBIÉN SE VIVE.</footer>
+</body>
+</html>
