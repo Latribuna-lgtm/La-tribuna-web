@@ -3,74 +3,186 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>La Tribuna | El periódico de los deportistas</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="masthead">
-  <div class="date">MARTES<br><b>8 DE SEPTIEMBRE DE 2026</b><br><span>Madrid, España</span></div>
-  <div class="brand"><h1>LA TRIBUNA</h1><p>EL PERIÓDICO DE LOS DEPORTISTAS</p><small>MÁS QUE FÚTBOL</small></div>
-  <div class="champions">⚽<br><b>CHAMPIONS LEAGUE</b><br>2026/27</div>
-</header>
 
-<nav>
-  <a href="#portada">PORTADA</a>
-  <a href="#ultima">ÚLTIMA HORA</a>
-  <a href="#madrid">REAL MADRID</a>
-  <a href="#champions">CHAMPIONS</a>
-  <a href="#exclusivas">EXCLUSIVAS</a>
-  <a href="#opinion">OPINIÓN</a>
-  <a href="#gossip">GOSSIP</a>
-</nav>
+<style>
+*{
+  box-sizing:border-box;
+}
 
-<main>
-<section id="portada" class="section portada">
-  <div class="section-title"><span>EDICIÓN ESPECIAL</span><h2>La portada de hoy</h2></div>
-  <img class="newspaper" src="01-portada.png" alt="Portada de La Tribuna">
-</section>
+html{
+  scroll-behavior:smooth;
+}
 
-<section id="ultima" class="section">
-  <div class="section-title"><span>ÚLTIMA HORA</span><h2>Las noticias de la noche</h2></div>
-  <div class="newspaper-grid">
-    <article><img class="newspaper" src="02-mbappe.png" alt="Mbappé"><h3>Mbappé, un inicio de alto nivel</h3></article>
-    <article><img class="newspaper" src="03-valverde.png" alt="Valverde"><h3>Valverde, el motor del equipo</h3></article>
-    <article><img class="newspaper" src="04-bernabeu.png" alt="Bernabéu"><h3>El Bernabéu vuelve a latir</h3></article>
-  </div>
-</section>
+body{
+  margin:0;
+  background:#eeeae2;
+  color:#111;
+  font-family:Georgia,"Times New Roman",serif;
+}
 
-<section id="madrid" class="section dark">
-  <div class="section-title"><span>REAL MADRID</span><h2>La noche blanca, bajo la lupa</h2></div>
-  <div class="newspaper-grid">
-    <article><img class="newspaper" src="06-jude.png" alt="Jude Bellingham"><h3>Jude, una noche para el olvido</h3></article>
-    <article><img class="newspaper" src="07-jude-analisis.png" alt="Análisis de Jude Bellingham"><h3>El análisis de una noche gris</h3></article>
-    <article><img class="newspaper" src="03-valverde.png" alt="Valverde"><h3>Valverde sostiene al equipo</h3></article>
-  </div>
-</section>
+header{
+  background:#f7f5ef;
+  border-bottom:3px solid #071b2c;
+}
 
-<section id="champions" class="section">
-  <div class="section-title"><span>CHAMPIONS</span><h2>Todos los resultados</h2></div>
-  <img class="newspaper" src="08-champions-resultados.png" alt="Resultados de Champions del martes 8 de septiembre de 2026">
-</section>
+.masthead{
+  display:grid;
+  grid-template-columns:180px 1fr 180px;
+  align-items:center;
+  padding:18px 25px 12px;
+  gap:20px;
+}
 
-<section id="exclusivas" class="section">
-  <div class="section-title"><span>EXCLUSIVAS</span><h2>La firma de Meryem Brown</h2></div>
-  <img class="newspaper" src="05-meryem.png" alt="Meryem Brown en La Tribuna">
-</section>
+.date{
+  font-size:14px;
+  line-height:1.35;
+  border-right:1px solid #999;
+  padding-right:15px;
+}
 
-<section id="opinion" class="section dark">
-  <div class="section-title"><span>OPINIÓN</span><h2>La Tribuna analiza</h2></div>
-  <div class="opinion"><h3>GANAR NO BORRA TODO LO QUE FALLÓ</h3><p>El resultado importa, pero también importa cómo se llegó a él. La noche europea deja buenas noticias y aspectos por corregir.</p></div>
-</section>
+.brand{
+  text-align:center;
+}
 
-<section id="gossip" class="section">
-  <div class="section-title"><span>GOSSIP</span><h2>Fuera del campo</h2></div>
-  <div class="newspaper-grid two">
-    <article><img class="newspaper" src="05-meryem.png" alt="Meryem Brown"><h3>Meryem vuelve a robar miradas</h3></article>
-    <article><img class="newspaper" src="04-bernabeu.png" alt="Bernabéu"><h3>Una noche para recordar</h3></article>
-  </div>
-</section>
-</main>
+.brand h1{
+  margin:0;
+  font-size:clamp(45px,8vw,105px);
+  line-height:.85;
+  letter-spacing:-4px;
+}
 
-<footer>LA TRIBUNA · MADRID 2026/27 · PORQUE EL FÚTBOL TAMBIÉN SE VIVE.</footer>
-</body>
-</html>
+.brand p{
+  margin:12px 0 0;
+  font-size:14px;
+  letter-spacing:6px;
+}
+
+.champions{
+  text-align:center;
+  font-size:15px;
+  line-height:1.4;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  background:#f7f5ef;
+  border-top:1px solid #999;
+  border-bottom:1px solid #999;
+}
+
+nav a{
+  color:#111;
+  text-decoration:none;
+  padding:12px 22px;
+  font-weight:bold;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+nav a:hover{
+  background:#071b2c;
+  color:white;
+}
+
+.breaking{
+  background:#071b2c;
+  color:white;
+  padding:10px 20px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-align:center;
+}
+
+.container{
+  width:min(1450px,94%);
+  margin:25px auto 50px;
+}
+
+.intro{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.intro h2{
+  font-size:clamp(28px,5vw,58px);
+  margin:0 0 8px;
+  text-transform:uppercase;
+}
+
+.intro p{
+  margin:0;
+  font-size:18px;
+}
+
+.news-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+
+.article{
+  background:#f8f6f0;
+  border:1px solid #bbb;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+  overflow:hidden;
+}
+
+.article.featured{
+  grid-column:1/-1;
+}
+
+.image-wrap{
+  width:100%;
+  background:#111;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+/* IMPORTANTE:
+   La imagen conserva TODA su proporción.
+   No usamos object-fit:cover.
+*/
+.article img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+}
+
+.article-content{
+  padding:20px 24px 25px;
+}
+
+.category{
+  color:#5d6570;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:2px;
+  margin-bottom:8px;
+}
+
+.article h3{
+  margin:0 0 10px;
+  font-size:clamp(22px,3vw,38px);
+  line-height:1;
+  text-transform:uppercase;
+}
+
+.article p{
+  font-size:17px;
+  line-height:1.5;
+  margin:0;
+}
+
+.meryem{
+  border-top:6px solid #071b2c;
+}
+
+.jude{
+  border-top:6px solid #8b171
