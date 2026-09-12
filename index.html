@@ -3,86 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Tribuna | El periódico de los deportistas</title>
-<meta name="description" content="La Tribuna — más que fútbol. Real Madrid, Champions, opinión, exclusivas y actualidad deportiva.">
-<link rel="stylesheet" href="styles.css">
+<title>La Tribuna | Real Madrid 4-1 Rayo Vallecano</title>
+<meta name="description" content="La Tribuna — edición especial del Real Madrid 4-1 Rayo Vallecano del 12 de septiembre de 2026.">
+<style>
+:root{--paper:#F3EEE3;--ink:#080808;--navy:#10253A}
+*{box-sizing:border-box} html,body{margin:0;width:100%;overflow-x:hidden}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+nav{background:var(--ink);display:flex;gap:0;overflow-x:auto;white-space:nowrap;position:sticky;top:0;z-index:20}
+nav a{color:#fff;text-decoration:none;padding:14px 18px;font-family:Arial,sans-serif;font-size:12px;font-weight:700}
+main{width:100%}.hero img{width:100%;height:auto;display:block}
+.section{width:min(1450px,100%);margin:auto;padding:34px 18px}
+.section-title{border-bottom:3px solid var(--ink);margin-bottom:22px}
+.section-title span{font:700 12px Arial,sans-serif;color:var(--navy)}
+.section-title h2{margin:7px 0 12px;font-size:clamp(28px,4vw,54px)}
+.cards,.feature-grid,.gossip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card,.feature-grid article,.gossip-grid article{min-width:0}
+.card img,.feature-grid img,.gossip-grid img{width:100%;height:auto;display:block}
+h3{font-size:clamp(22px,2.4vw,36px);margin:12px 0 7px}
+p{font-size:18px;line-height:1.45;margin:0}
+.dark{background:var(--navy);color:#fff;max-width:none}
+.dark .section-title{border-color:#fff}
+.dark .section-title span{color:#fff}
+.dark>.section-title,.dark>.feature-grid{width:min(1414px,100%);margin-left:auto;margin-right:auto}
+.wide{display:grid;grid-template-columns:1.4fr 1fr;gap:25px;align-items:center}
+.wide img{width:100%;height:auto}
+.meryem-card{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:start}
+.meryem-card img{width:100%;height:auto}
+.tag{font:700 12px Arial,sans-serif;color:var(--navy);letter-spacing:1px}
+blockquote{border-left:5px solid var(--navy);padding-left:18px;font-size:25px;font-style:italic}
+footer{background:var(--ink);color:#fff;text-align:center;padding:28px 15px;font:700 12px Arial,sans-serif}
+@media(max-width:700px){
+ .section{padding:25px 14px}.cards,.feature-grid,.gossip-grid,.wide,.meryem-card{grid-template-columns:1fr}
+ .section-title h2{font-size:31px}p{font-size:17px}
+ nav a{padding:11px 13px;font-size:11px}
+}
+</style>
 </head>
 <body>
-
-
 <nav>
-  <a href="#portada">PORTADA</a>
-  <a href="#ultima">ÚLTIMA HORA</a>
-  <a href="#madrid">REAL MADRID</a>
-  <a href="#champions">CHAMPIONS</a>
-  <a href="#exclusivas">EXCLUSIVAS</a>
-  <a href="#opinion">OPINIÓN</a>
-  <a href="#gossip">GOSSIP</a>
+<a href="#portada">PORTADA</a><a href="#ultima">ÚLTIMA HORA</a><a href="#madrid">REAL MADRID</a>
+<a href="#exclusivas">EXCLUSIVAS</a><a href="#opinion">OPINIÓN</a>
 </nav>
-
 <main>
-<section id="portada" class="hero front-page">
-  <img src="01-portada.png" alt="Portada de La Tribuna: Real Madrid ante Inter">
-</section>
-
+<section id="portada" class="hero"><img src="assets/01-portada.png" alt="Real Madrid 4-1 Rayo Vallecano"></section>
 <section id="ultima" class="section">
-  <div class="section-title"><span>ÚLTIMA HORA</span><h2>Lo que acaba de pasar</h2></div>
-  <div class="cards">
-    <article class="card"><img src="02-mbappe.png"><h3>Mbappé, un inicio de alto nivel</h3><p>Gol, liderazgo y protagonismo en una noche europea exigente.</p></article>
-    <article class="card"><img src="03-valverde.png"><h3>Valverde, el motor del equipo</h3><p>Entrega, despliegue y carácter cuando el partido más lo necesitaba.</p></article>
-    <article class="card"><img src="04-bernabeu.png"><h3>El Bernabéu vuelve a latir</h3><p>La Champions regresó a Madrid y el estadio volvió a ser protagonista.</p></article>
-  </div>
+<div class="section-title"><span>ÚLTIMA HORA</span><h2>Real Madrid 4-1 Rayo Vallecano</h2></div>
+<div class="cards">
+<article class="card"><img src="assets/02-mbappe.png"><h3>Mbappé vuelve a decidir</h3><p>Doblete: 14' y 90+1'.</p></article>
+<article class="card"><img src="assets/03-carreras.png"><h3>Carreras, decisivo</h3><p>Provocó el penalti y marcó el segundo.</p></article>
+<article class="card"><img src="assets/04-bellingham.png"><h3>Bellingham aparece</h3><p>Gol al 35' para el 3-0.</p></article>
+</div>
 </section>
-
 <section id="madrid" class="section dark">
-  <div class="section-title"><span>REAL MADRID</span><h2>La noche blanca, bajo la lupa</h2></div>
-  <div class="feature-grid">
-    <article><img src="06-jude.png"><h3>Jude, una noche para el olvido</h3><p>Un análisis directo de una actuación básica, con una clara ocasión desperdiciada y poca influencia en el juego.</p></article>
-    <article><img src="07-jude-analisis.png"><h3>El Madrid gana, pero quedan preguntas</h3><p>Tres puntos importantes no esconden todo lo que el equipo deberá corregir.</p></article>
-    <article><img src="03-valverde.png"><h3>Valverde sostiene al equipo</h3><p>Cuando el partido se complicó, apareció el uruguayo para aportar equilibrio.</p></article>
-  </div>
+<div class="section-title"><span>REAL MADRID</span><h2>La goleada, bajo la lupa</h2></div>
+<div class="feature-grid">
+<article><img src="assets/05-meryem.png"><h3>El marcador no cuenta todo</h3><p>El Madrid fue muy superior en la primera mitad, pero el Rayo reaccionó y generó peligro tras el descanso.</p></article>
+<article><img src="assets/06-jude.png"><h3>Jude: gol y presencia</h3><p>Marcó el tercero. Su rendimiento merece una lectura más amplia que el simple dato del gol.</p></article>
+<article><img src="assets/07-jude-analisis.png"><h3>Un equipo todavía en construcción</h3><p>La victoria fue clara, pero el segundo tiempo dejó preguntas para los próximos partidos.</p></article>
+</div>
 </section>
-
-<section id="champions" class="section">
-  <div class="section-title"><span>CHAMPIONS</span><h2>La jornada europea</h2></div>
-  <article class="wide">
-    <img src="08-champions-resultados.png" alt="Resultados de la jornada de Champions">
-    <div><h3>Champions: primera noche, primeros ganadores</h3><p>Todos los resultados de la jornada del martes 8 de septiembre de 2026, reunidos en una sola edición especial.</p></div>
-  </article>
+<section id="exclusivas" class="section">
+<div class="section-title"><span>EXCLUSIVO | MERYEM</span><h2>El 4-1 no cuenta toda la historia</h2></div>
+<article class="meryem-card"><img src="assets/05-meryem.png"><div>
+<div class="tag">COLUMNA ESPECIAL</div>
+<h3>El Real gana. Las dudas siguen.</h3>
+<p class="lead">El resultado es contundente, pero el partido tuvo dos caras. La primera mitad fue brillante; tras el descanso, Rayo encontró espacios y redujo distancias.</p>
+<blockquote>“El marcador tranquiliza. El juego todavía tiene preguntas.”</blockquote>
+<p><b>— Meryem Brown, La Tribuna</b></p>
+</div></article>
 </section>
-
-<section id="exclusivas" class="section meryem">
-  <div class="section-title"><span>EXCLUSIVAS</span><h2>La firma de Meryem Brown</h2></div>
-  <article class="meryem-card">
-    <img src="05-meryem.png" alt="Meryem Brown en cobertura de Champions">
-    <div>
-      <div class="tag">COLUMNA ESPECIAL</div>
-      <h3>MERyEM, PRESENCIA QUE INCOMODA</h3>
-      <p class="lead">Mientras las miradas se multiplican fuera del campo, dentro del terreno hubo actuaciones que no estuvieron a la altura de la noche.</p>
-      <p>Una mirada profesional, elegante y arrolladora sobre el partido: sin necesidad de exagerar, los detalles hablan. Bellingham tuvo una noche gris, sin peso suficiente para marcar diferencias y con una ocasión clara que terminó desperdiciada.</p>
-      <blockquote>“Hay noches en las que el talento no alcanza. También se necesita presencia.”</blockquote>
-      <p><b>— Meryem Brown, La Tribuna</b></p>
-    </div>
-  </article>
-</section>
-
-<section id="opinion" class="section opinion">
-  <div class="section-title"><span>OPINIÓN</span><h2>Lo que dejó el partido</h2></div>
-  <div class="opinion-box">
-    <h3>GANAR NO BORRA TODO LO QUE FALLÓ</h3>
-    <p>El resultado importa, pero también importa cómo se llegó a él. La Tribuna analiza las señales positivas y las dudas que deja el estreno europeo.</p>
-  </div>
-</section>
-
-<section id="gossip" class="section dark">
-  <div class="section-title"><span>GOSSIP</span><h2>Fuera del campo</h2></div>
-  <div class="gossip-grid">
-    <article><img src="05-meryem.png"><h3>Meryem vuelve a robar miradas</h3><p>La presencia de la periodista en el Bernabéu no pasó desapercibida.</p></article>
-    <article><img src="04-bernabeu.png"><h3>Una noche para recordar</h3><p>Champions, focos y mucho movimiento alrededor del estadio.</p></article>
-  </div>
+<section id="opinion" class="section">
+<div class="section-title"><span>OPINIÓN</span><h2>La lectura de La Tribuna</h2></div>
+<div class="wide"><img src="assets/08-partido.png"><div><h3>GANAR NO BORRA TODO LO QUE FALTÓ</h3><p>Madrid resolvió con calidad individual y una gran primera mitad. Pero el tramo posterior al gol de Camello recordó que el equipo todavía puede perder control.</p></div></div>
 </section>
 </main>
-
 <footer>LA TRIBUNA · MADRID 2026/27 · PORQUE EL FÚTBOL TAMBIÉN SE VIVE.</footer>
-</body>
-</html>
+</body></html>
