@@ -3,79 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Tribuna | Real Madrid 4-1 Rayo Vallecano</title>
-<meta name="description" content="La Tribuna — edición especial del Real Madrid 4-1 Rayo Vallecano del 12 de septiembre de 2026.">
-<style>
-:root{--paper:#F3EEE3;--ink:#080808;--navy:#10253A}
-*{box-sizing:border-box} html,body{margin:0;width:100%;overflow-x:hidden}
-body{background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
-nav{background:var(--ink);display:flex;gap:0;overflow-x:auto;white-space:nowrap;position:sticky;top:0;z-index:20}
-nav a{color:#fff;text-decoration:none;padding:14px 18px;font-family:Arial,sans-serif;font-size:12px;font-weight:700}
-main{width:100%}.hero img{width:100%;height:auto;display:block}
-.section{width:min(1450px,100%);margin:auto;padding:34px 18px}
-.section-title{border-bottom:3px solid var(--ink);margin-bottom:22px}
-.section-title span{font:700 12px Arial,sans-serif;color:var(--navy)}
-.section-title h2{margin:7px 0 12px;font-size:clamp(28px,4vw,54px)}
-.cards,.feature-grid,.gossip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.card,.feature-grid article,.gossip-grid article{min-width:0}
-.card img,.feature-grid img,.gossip-grid img{width:100%;height:auto;display:block}
-h3{font-size:clamp(22px,2.4vw,36px);margin:12px 0 7px}
-p{font-size:18px;line-height:1.45;margin:0}
-.dark{background:var(--navy);color:#fff;max-width:none}
-.dark .section-title{border-color:#fff}
-.dark .section-title span{color:#fff}
-.dark>.section-title,.dark>.feature-grid{width:min(1414px,100%);margin-left:auto;margin-right:auto}
-.wide{display:grid;grid-template-columns:1.4fr 1fr;gap:25px;align-items:center}
-.wide img{width:100%;height:auto}
-.meryem-card{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:start}
-.meryem-card img{width:100%;height:auto}
-.tag{font:700 12px Arial,sans-serif;color:var(--navy);letter-spacing:1px}
-blockquote{border-left:5px solid var(--navy);padding-left:18px;font-size:25px;font-style:italic}
-footer{background:var(--ink);color:#fff;text-align:center;padding:28px 15px;font:700 12px Arial,sans-serif}
-@media(max-width:700px){
- .section{padding:25px 14px}.cards,.feature-grid,.gossip-grid,.wide,.meryem-card{grid-template-columns:1fr}
- .section-title h2{font-size:31px}p{font-size:17px}
- nav a{padding:11px 13px;font-size:11px}
-}
-</style>
+<meta name="description" content="La Tribuna — Crónica del derbi madrileño: Atlético 2-1 Real Madrid, 20 de septiembre de 2026.">
+<title>La Tribuna | Un derbi no se juega. Se sobrevive.</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav>
-<a href="#portada">PORTADA</a><a href="#ultima">ÚLTIMA HORA</a><a href="#madrid">REAL MADRID</a>
-<a href="#exclusivas">EXCLUSIVAS</a><a href="#opinion">OPINIÓN</a>
-</nav>
-<main>
-<section id="portada" class="hero"><img src="01-portada.png" alt="Real Madrid 4-1 Rayo Vallecano"></section>
-<section id="ultima" class="section">
-<div class="section-title"><span>ÚLTIMA HORA</span><h2>Real Madrid 4-1 Rayo Vallecano</h2></div>
-<div class="cards">
-<article class="card"><img src="02-mbappe.png"><h3>Mbappé vuelve a decidir</h3><p>Doblete: 14' y 90+1'.</p></article>
-<article class="card"><img src="03-carreras.png"><h3>Carreras, decisivo</h3><p>Provocó el penalti y marcó el segundo.</p></article>
-<article class="card"><img src="04-bellingham.png"><h3>Bellingham aparece</h3><p>Gol al 35' para el 3-0.</p></article>
-</div>
+
+<header class="site-header">
+  <div class="masthead">
+    <div class="date">20 DE SEPTIEMBRE<br>DE 2026</div>
+    <div class="brand">
+      <h1>LA TRIBUNA</h1>
+      <p>EL PERIÓDICO DE LOS DEPORTISTAS</p>
+    </div>
+    <div class="edition">EDICIÓN ESPECIAL<br><strong>DERBI MADRILEÑO</strong></div>
+  </div>
+  <nav>
+    <a href="#cronica">CRÓNICA</a>
+    <a href="#partido">EL PARTIDO</a>
+    <a href="#meryem">MERYEM BROWN</a>
+  </nav>
+  <div class="breaking">ÚLTIMA HORA · ATLÉTICO 2-1 REAL MADRID · EL DERBI SE QUEDA EN EL METROPOLITANO</div>
+</header>
+
+<main class="container">
+
+<section class="hero" id="cronica">
+  <div class="hero-image"><img src="assets/derbi-hero.png" alt="Ilustración editorial del derbi madrileño en el Metropolitano"></div>
+  <div class="hero-copy">
+    <div class="kicker">DERBI MADRILEÑO · JORNADA 7</div>
+    <h2>Un derbi no se juega. Se sobrevive.</h2>
+    <div class="scoreline"><span>ATLÉTICO</span><b>2 — 1</b><span>REAL MADRID</span></div>
+    <p class="dek">El Atlético se impuso en un partido intenso, físico y cargado por todo lo que representa una rivalidad que convierte cada balón dividido en una batalla.</p>
+    <p class="byline">20 de septiembre de 2026 · Metropolitano</p>
+  </div>
 </section>
-<section id="madrid" class="section dark">
-<div class="section-title"><span>REAL MADRID</span><h2>La goleada, bajo la lupa</h2></div>
-<div class="feature-grid">
-<article><img src="05-meryem.png"><h3>El marcador no cuenta todo</h3><p>El Madrid fue muy superior en la primera mitad, pero el Rayo reaccionó y generó peligro tras el descanso.</p></article>
-<article><img src="06-jude.png"><h3>Jude: gol y presencia</h3><p>Marcó el tercero. Su rendimiento merece una lectura más amplia que el simple dato del gol.</p></article>
-<article><img src="07-jude-analisis.png"><h3>Un equipo todavía en construcción</h3><p>La victoria fue clara, pero el segundo tiempo dejó preguntas para los próximos partidos.</p></article>
-</div>
+
+<section class="article-layout">
+<article class="story">
+  <p>Hay partidos que valen tres puntos.</p>
+  <p>Y hay partidos que, aunque la clasificación diga lo contrario, <strong>parecen valer mucho más</strong>.</p>
+  <p>Un derbi madrileño pertenece a la segunda categoría.</p>
+  <p>No importa que sea septiembre. No importa que todavía quede prácticamente toda la temporada por delante. Cuando Atlético de Madrid y Real Madrid se encuentran, la tabla pasa a segundo plano durante noventa minutos.</p>
+  <p>Está el orgullo.</p>
+  <p>Está la rivalidad.</p>
+  <p>Está Madrid dividido en dos.</p>
+  <p>Y, sobre todo, está esa sensación de que cada balón dividido, cada entrada y cada error pesa el doble.</p>
+  <p>El Metropolitano lo recordó desde el primer minuto.</p>
+  <p>Fue un partido <strong>intenso, físico, incómodo y emocionalmente cargado</strong>, exactamente como suele exigir un derbi.</p>
+  <p>Y esta vez el Atlético terminó llevándose todo.</p>
+
+  <h3>Un partido que se rompió en cinco minutos</h3>
+  <p>La primera mitad fue de máxima tensión. Ninguno de los dos equipos consiguió imponer completamente su juego y cada acercamiento parecía tener una carga adicional por lo que había en juego.</p>
+  <p>El Madrid tuvo una de sus ocasiones más claras en el minuto 40, cuando Arda Güler probó desde fuera del área y obligó a Oblak a intervenir.</p>
+
+  <figure><img src="assets/derbi-ambiente.png" alt="Ambiente editorial del derbi en el Metropolitano"><figcaption>El derbi: intensidad, rivalidad y un estadio completamente encendido.</figcaption></figure>
+
+  <p>Pero el verdadero punto de inflexión llegó después del descanso.</p>
+  <p><strong>Minuto 52.</strong></p>
+  <p>Huijsen derribó a Giuliano Simeone dentro del área.</p>
+  <p class="impact">Penalti.<br>Y roja.</p>
+  <p>El partido acababa de cambiar.</p>
+  <p>Un minuto después, Alejandro Grimaldo convirtió desde los once metros.</p>
+  <p class="goal">ATLÉTICO 1-0 REAL MADRID.</p>
+
+  <figure><img src="assets/grimaldo-penal.png" alt="Ilustración editorial de la acción del penalti del Atlético"><figcaption>Grimaldo abrió el marcador desde el punto de penalti.</figcaption></figure>
+
+  <p>Con un jugador más y el estadio completamente encendido, el Atlético aprovechó el momento.</p>
+  <p>En el 59', Jonathan David recibió el balón de Giuliano Simeone y puso el segundo.</p>
+  <p class="goal">2-0.</p>
+  <p>El Madrid tenía que hacer algo que ya de por sí resulta complicado: reaccionar en un derbi, fuera de casa y con diez jugadores.</p>
+  <p>Y aun así, no dejó de intentarlo.</p>
+  <p>Courtois sostuvo al equipo cuando el partido amenazaba con escaparse definitivamente.</p>
+
+  <figure><img src="assets/huijsen-roja.png" alt="Ilustración editorial de la expulsión de Huijsen"><figcaption>La expulsión de Huijsen cambió el escenario del encuentro.</figcaption></figure>
+
+  <p>Y cuando parecía que ya no quedaba tiempo…</p>
+  <p><strong>Minuto 89.</strong></p>
+  <p>Antonio Rüdiger apareció.</p>
+  <p>Cabezazo.</p>
+  <p>Gol.</p>
+  <p class="goal">2-1.</p>
+
+  <figure><img src="assets/ruediger-cabezazo.png" alt="Ilustración editorial de un cabezazo de Rüdiger en el área"><figcaption>Rüdiger recortó distancias en el minuto 89 y devolvió vida al Madrid.</figcaption></figure>
+
+  <p>Por unos instantes, el Metropolitano volvió a contener la respiración.</p>
+  <p>Porque eso también son los derbis.</p>
+  <p>Un partido puede parecer terminado durante 88 minutos y, de repente, una jugada puede devolverle vida.</p>
+  <p>El Madrid buscó el empate en los últimos instantes, pero el Atlético resistió.</p>
+  <p>El pitido final confirmó la victoria rojiblanca.</p>
+
+  <div class="result-box">
+    <div><span>ATLÉTICO DE MADRID</span><strong>2</strong></div>
+    <div><span>REAL MADRID</span><strong>1</strong></div>
+    <p>53' Grimaldo (p) · 59' Jonathan David · 89' Rüdiger</p>
+  </div>
+
+  <h3>Más que tres puntos</h3>
+  <p>El Atlético no solamente ganó un partido de Liga.</p>
+  <p>Ganó <strong>un derbi</strong>.</p>
+  <p>Y en una rivalidad como esta, eso tiene un peso propio.</p>
+  <p>El Real Madrid se marcha con la derrota y con 15 puntos después de siete jornadas, mientras el Atlético alcanza los 16.</p>
+  <p>Pero probablemente lo que más duela en Chamartín no sea la diferencia de un punto.</p>
+  <p>Sea haber perdido precisamente <strong>este partido</strong>.</p>
+  <p>Porque los derbis dejan memoria.</p>
+  <p>Y este dejó una noche intensa, una expulsión, dos goles rojiblancos, un último intento madridista y un Metropolitano celebrando hasta el final.</p>
+</article>
+
+<aside class="sidebar" id="partido">
+  <div class="fact-card">
+    <div class="card-title">FICHA DEL PARTIDO</div>
+    <p><strong>Competición</strong><br>LaLiga · Jornada 7</p>
+    <p><strong>Estadio</strong><br>Metropolitano</p>
+    <p><strong>Resultado</strong><br>Atlético 2-1 Real Madrid</p>
+    <p><strong>Goles</strong><br>Grimaldo 53' (p)<br>Jonathan David 59'<br>Rüdiger 89'</p>
+    <p><strong>Incidencia clave</strong><br>Huijsen expulsado tras la acción sobre Giuliano Simeone.</p>
+  </div>
+
+  <div class="fact-card">
+    <div class="card-title">EL DATO</div>
+    <p>Atlético queda con <strong>16 puntos</strong>. Real Madrid, con <strong>15</strong>. Barcelona lidera con 21.</p>
+  </div>
+
+  <div class="fact-card">
+    <div class="card-title">LA IMAGEN</div>
+    <p>Rüdiger apareció en el 89' para mantener con vida al Madrid hasta el último minuto.</p>
+  </div>
+</aside>
 </section>
-<section id="exclusivas" class="section">
-<div class="section-title"><span>EXCLUSIVO | MERYEM</span><h2>El 4-1 no cuenta toda la historia</h2></div>
-<article class="meryem-card"><img src="05-meryem.png"><div>
-<div class="tag">COLUMNA ESPECIAL</div>
-<h3>El Real gana. Las dudas siguen.</h3>
-<p class="lead">El resultado es contundente, pero el partido tuvo dos caras. La primera mitad fue brillante; tras el descanso, Rayo encontró espacios y redujo distancias.</p>
-<blockquote>“El marcador tranquiliza. El juego todavía tiene preguntas.”</blockquote>
-<p><b>— Meryem Brown, La Tribuna</b></p>
-</div></article>
+
+<section class="meryem" id="meryem">
+  <div class="meryem-label">MIENTRAS TANTO, EN LA TRIBUNA…</div>
+  <div class="meryem-inner">
+    <div class="meryem-intro">
+      <span class="eyebrow">COLUMNA DE OPINIÓN · CONTENIDO FICTICIO</span>
+      <h2>Meryem Brown no vino a endulzar el derbi.</h2>
+      <h3>«El Madrid salió a jugar un partido. El Atlético salió a jugar un derbi.»</h3>
+    </div>
+
+    <div class="meryem-text">
+      <p>Voy a empezar por algo muy sencillo:</p>
+      <p><strong>esto era un derbi.</strong></p>
+      <p>Y quien diga que un derbi se juega igual que cualquier otra jornada de Liga no está entendiendo lo que ocurrió hoy.</p>
+      <p>Aquí no solamente estaban en juego tres puntos.</p>
+      <p>Estaban el orgullo, la rivalidad, la presión del estadio y esa necesidad casi irracional de demostrar quién manda en Madrid durante noventa minutos.</p>
+      <p>Por eso fue un partido tan intenso.</p>
+      <p>Cada choque parecía personal.</p>
+      <p>Cada balón dividido parecía una declaración.</p>
+      <p>Cada error pesaba el doble.</p>
+      <p>Y precisamente por eso perder así duele.</p>
+
+      <p>El Real Madrid perdió 2-1.</p>
+      <p>Pero sería demasiado cómodo explicar todo diciendo simplemente que Huijsen fue expulsado.</p>
+      <p>Sí.</p>
+      <p>La expulsión cambió completamente el partido.</p>
+      <p>Sí.</p>
+      <p>Jugar con diez en el Metropolitano después de una acción de ese calibre condiciona cualquier encuentro.</p>
+      <p>Pero si queremos ser honestos, tenemos que mirar más allá de esa jugada.</p>
+      <p>Porque antes de la roja, <strong>el Madrid tampoco estaba dominando el partido como necesitaba hacerlo.</strong></p>
+      <p>Y eso es lo que debería preocupar.</p>
+      <p>No perder un derbi.</p>
+      <p>Perderlo sin encontrar durante demasiados minutos la manera de imponer tu personalidad.</p>
+
+      <h4>Y sí, también hay que hablar de Bellingham.</h4>
+      <p>Porque cuando eres uno de los futbolistas más importantes del proyecto, hay noches en las que simplemente no alcanza con haberlo intentado.</p>
+      <p>Hoy no alcanzó.</p>
+      <p>Bellingham no consiguió convertirse en ese futbolista capaz de romper el partido cuando más lo necesitaba el Madrid.</p>
+      <p>No significa que sea un mal jugador.</p>
+      <p>No significa que haya que cuestionar todo lo que ha hecho.</p>
+      <p>Significa algo mucho más sencillo:</p>
+      <p><strong>hoy no estuvo a la altura de lo que el partido exigía.</strong></p>
+      <p>Y decirlo no debería ser un ataque.</p>
+      <p>Es análisis.</p>
+      <p>Los grandes jugadores también tienen partidos malos.</p>
+      <p>La diferencia está en lo que hacen después.</p>
+
+      <h4>Pero cuidado con buscar un solo culpable.</h4>
+      <p>Porque sería demasiado fácil.</p>
+      <p>Un derbi se gana y se pierde como equipo.</p>
+      <p>El Atlético supo jugar el partido que tenía delante. El Madrid tuvo dificultades para hacerlo.</p>
+      <p>La expulsión complicó todo.</p>
+      <p>Courtois sostuvo.</p>
+      <p>Rüdiger apareció en el 89'.</p>
+      <p>Y aun así no alcanzó.</p>
+      <p>Eso debería dejar una reflexión mucho más profunda que señalar con el dedo a un solo jugador.</p>
+
+      <p>Porque si el Real Madrid quiere competir por todo esta temporada, tendrá que aprender algo fundamental:</p>
+      <p><strong>los partidos grandes no siempre se ganan jugando bonito.</strong></p>
+      <p>A veces se ganan siendo incómodo.</p>
+      <p>A veces siendo paciente.</p>
+      <p>A veces resistiendo.</p>
+      <p>Y, sobre todo, entendiendo que hay noches en las que el escudo pesa más.</p>
+      <p>Hoy el Atlético entendió eso mejor.</p>
+      <p>Y por eso ganó.</p>
+      <p>El Madrid perdió.</p>
+      <p>No es el fin de nada.</p>
+      <p>Es septiembre.</p>
+      <p>Pero tampoco hay que disfrazarlo.</p>
+      <p>Porque una cosa es perder un partido.</p>
+      <p>Y otra es salir de un derbi con la sensación de que todavía estás intentando descubrir cómo jugarlo.</p>
+      <p>Ahora toca responder.</p>
+      <p>Porque los derbis dejan heridas.</p>
+      <p>Pero también dejan memoria.</p>
+      <p>Y esta noche, en el Metropolitano, <strong>la memoria será rojiblanca.</strong></p>
+
+      <p class="signature">— Meryem Brown<br><span>Columna ficticia para La Tribuna / Universo ETYG</span></p>
+    </div>
+  </div>
 </section>
-<section id="opinion" class="section">
-<div class="section-title"><span>OPINIÓN</span><h2>La lectura de La Tribuna</h2></div>
-<div class="wide"><img src="08-partido.png"><div><h3>GANAR NO BORRA TODO LO QUE FALTÓ</h3><p>Madrid resolvió con calidad individual y una gran primera mitad. Pero el tramo posterior al gol de Camello recordó que el equipo todavía puede perder control.</p></div></div>
-</section>
+
+<footer>
+  <strong>LA TRIBUNA</strong> · Edición especial del 20 de septiembre de 2026<br>
+  <span>Las imágenes incluidas en este paquete son ilustraciones editoriales generadas para el sitio y no fotografías documentales del partido.</span>
+</footer>
+
 </main>
-<footer>LA TRIBUNA · MADRID 2026/27 · PORQUE EL FÚTBOL TAMBIÉN SE VIVE.</footer>
-</body></html>
+</body>
+</html>
